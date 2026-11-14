@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2c5e3b;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;           
+    padding: 10px 30px;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;     
+}
+
+.logo-box h2 {
+    color: white;
+    margin: 0;
+    font-size: 24px;
+}
+
+.logo {
+    height: 45px;
+    width: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #a3e4d7;
+} 
+
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.custom-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.custom-list li {
+    background-color: #e8f8f5;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border: 1px solid #a3e4d7; 
+    border-radius: 8px; 
+    transition: background 0.3s;
+}
+
+.custom-list li:hover {
+    background-color: #d1f2eb; 
+}
+
+.collapsible {
+    background-color: #27ae60;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #219653;
+}
+
+.collapse-content {
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    border-radius: 0 0 5px 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 15px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
